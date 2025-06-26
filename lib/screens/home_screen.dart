@@ -23,9 +23,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final name = ref.watch(nameProvider);
     return Scaffold(
-      appBar: AppBar(title: Text('Welcome, $name!')),
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
